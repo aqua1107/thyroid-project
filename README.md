@@ -26,3 +26,7 @@
 - 다양한 알고리즘 성능 비교
 - 하이퍼파라미터 최적화
 - SHAP/LIME 기반 모델 해석
+
+## Data Download
+다운로드 링크: https://archive.ics.uci.edu/dataset/102/thyroid+disease<br>
+데이터셋 저장 경로: /data/thyroid+disease/ (폴더형식)
