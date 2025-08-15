@@ -29,4 +29,8 @@
 
 ## Data Download
 다운로드 링크: https://archive.ics.uci.edu/dataset/102/thyroid+disease<br>
+<<<<<<< HEAD
 데이터셋 저장 경로: /data/thyroid+disease/ (폴더형식)
+=======
+데이터셋 저장 경로: /data/thyroid+disease/ (폴더형식)
+>>>>>>> 319822ff21af42a1f5c8a2b4bc6cce5bf04b6668
