@@ -10,23 +10,33 @@
 ## Dataset Information
 - **Source**: UCI Machine Learning Repository
 - **Size**: 215 instances, 5 features
-- **Classes**: Normal, Hyperthyroid, Hypothyroid
-- **Challenge**: 불균형 데이터 + 의료 도메인 특성
+- **Classes**: Normal (150), Hyperthyroid (35), Hypothyroid (30)
+- **Features**: T3 resin uptake, Total T4, Total T3, Basal TSH, Max TSH diff
 
-## Key Features
-### 1. 의료적 관점
-- 임상적으로 유의미한 특성 분석
-- 의료진이 활용 가능한 해석 가능한 모델
+## Key Analysis Results
 
-### 2. 개인정보보호 관점
-- 합성데이터 생성 가능성 탐구
-- Differential Privacy 적용 방안 연구
+### 1. 의학적 인사이트
+- TSH와 T3/T4의 길항작용 확인
+- 갑상선 저하증: TSH 12.92 (정상의 10배 상승)
+- 갑상선 항진증: T3/T4 2배 이상 증가
 
-### 3. 기술적 완성도
-- 다양한 알고리즘 성능 비교
-- 하이퍼파라미터 최적화
-- SHAP/LIME 기반 모델 해석
+### 2. 데이터 과학적 접근
+- 통계적 이상치를 의학적 관점에서 재해석
+- 중증 환자 데이터 보존을 통한 실용적 모델 개발
 
-## Data Download
-다운로드 링크: https://archive.ics.uci.edu/dataset/102/thyroid+disease<br>
-데이터셋 저장 경로: /data/thyroid+disease/ (폴더형식)
+## Model Performance & Insights
+
+### 성능 요약
+- **전체 정확도**: 98% (43개 중 42개 정확 예측)
+- **클래스별 성능**:
+  - Normal: 100% (28/28) - 완벽 분류
+  - Hyperthyroid: 100% (8/8) - 완벽 분류  
+  - Hypothyroid: 86% recall (6/7) - 1개 오분류
+
+### 주요 발견사항
+**의학적 타당성**: 갑상선 호르몬 수치의 명확한 구분으로 높은 정확도 달성  
+**임상적 유용성**: TSH가 가장 중요한 진단 지표임을 AI 모델로 검증  
+**개선 영역**: 저하증 환자 일부가 정상으로 오분류되는 문제 존재
+
+### 결론
+로지스틱 회귀 모델이 갑상선 데이터에서 전체적으로 98% 정확도를 보였으며, 특히 정상과 항진증은 완벽히 구분했습니다. 다만 저하증 환자 일부가 정상으로 분류되는 경우가 있어, recall을 더 높이는 방향의 추가 보완이 필요함.
