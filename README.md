@@ -1,6 +1,6 @@
 # Thyroid Disease Classification for Privacy-Preserving Healthcare AI
 
-> **"7억명의 갑상선 환자를 위한 개인정보보호 기반 AI 진단 시스템"**
+> **"7억명의 갑상선 환자를 위한 AI 진단 시스템"**
 
 ## Project Overview
 - **목적**: 갑상선 질환 조기 진단을 위한 머신러닝 모델 개발
